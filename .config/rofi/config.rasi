@@ -1,0 +1,17 @@
+configuration {
+    modi: "run";
+    width: 900;
+    lines: 16;
+    columns: 1;
+    font: "Hack Nerd Font 11";
+    bw: 1;
+    show-icons: false;
+    terminal: "urxvt";
+    drun-match-fields: "name,generic,exec,categories";
+    levenshtein-sort: true;
+    sidebar-mode: true;
+    combi-modi: "run";
+    matching: "fuzzy";
+    theme: "~/.config/rofi/themes/mygalaxy.rasi";
+    combi-hide-mode-prefix: true;
+}
