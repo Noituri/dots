@@ -47,6 +47,7 @@
     curl
     git
     emacs
+    gcc
     zsh
     herbstluftwm
     compton
@@ -54,7 +55,7 @@
     spotify
     ranger
     feh
-    rxvt_unicode
+    alacritty
     neofetch
     dunst
     htop
