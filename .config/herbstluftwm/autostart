@@ -154,4 +154,4 @@ feh --bg-scale /home/noituri/Pictures/moon.jpg
 #    "$panel" $monitor &
 #done
 #fcitx
-#compton
+compton & polybar moon
