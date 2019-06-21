@@ -42,6 +42,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget
+    scrot
     vim
     unzip
     curl
@@ -66,6 +67,7 @@
     pkgs.go_1_12
     rustup
     openjdk
+    polybar
   ];
 
   fonts.fonts = with pkgs; [
@@ -100,7 +102,8 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
-
+  hardware.pulseaudio.support32Bit = true;
+  
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
@@ -110,6 +113,7 @@
     herbstluftwm.enable = true;
   };
 
+  hardware.opengl.enable = true;
   hardware.opengl.driSupport32Bit = true;
 
   # Enable touchpad support.
