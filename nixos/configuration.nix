@@ -68,7 +68,8 @@
     rustup
     openjdk
     polybar
-  ];
+    steam
+];
 
   fonts.fonts = with pkgs; [
     nerdfonts
@@ -115,6 +116,14 @@
 
   hardware.opengl.enable = true;
   hardware.opengl.driSupport32Bit = true;
+  
+  systemd.extraConfig = "DefaultLimitNOFILE=1048576";
+  security.pam.loginLimits = [{
+    domain = "*";
+    type = "hard";
+    item = "nofile";
+    value = "1048576";
+  }];
 
   # Enable touchpad support.
   # services.xserver.libinput.enable = true;
