@@ -12,6 +12,6 @@ configuration {
     sidebar-mode: true;
     combi-modi: "run";
     matching: "fuzzy";
-    theme: "~/.config/rofi/themes/mygalaxy.rasi";
+    theme: "~/.config/rofi/themes/sun.rasi";
     combi-hide-mode-prefix: true;
 }
